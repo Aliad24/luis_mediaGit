@@ -17,3 +17,31 @@
 /* Colores */
 
 /* ******************************** */
+
+:root{
+  --color-body-mobile:rgb(218,49,49);
+  --color-body-ipad: rgb(215, 215, 86);
+  --color-body-desktop: rgb(40, 39, 39);
+
+  --font-color-mobile: rgb(232, 229, 229);
+  --font-color-ipad: rgb(23, 23, 23);
+  --font-color-desktop: rgb(232, 229, 229);
+
+  --tablet: 37,5em;
+  --desktop: 62.50em;
+}
+
+body{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-body-mobile);
+}
+
+.hola{
+  font-size: 4em;
+  color: var(--font-color-mobile);
+}
+
+@media (min)
