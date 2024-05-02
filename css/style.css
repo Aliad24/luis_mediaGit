@@ -27,7 +27,7 @@
   --font-color-ipad: rgb(23, 23, 23);
   --font-color-desktop: rgb(232, 229, 229);
 
-  --tablet: 37,5em;
+  --tablet: 37.5em;
   --desktop: 62.50em;
 }
 
@@ -39,9 +39,23 @@ body{
   background-color: var(--color-body-mobile);
 }
 
-.hola{
-  font-size: 4em;
+body{
+  font-size: 16em;
   color: var(--font-color-mobile);
 }
 
-@media (min)
+@media screen and (min-width: 37.5em) {
+  body {
+    color: var(--font-color-ipad);
+    background-color: var(--color-body-ipad);
+  }
+}
+
+
+@media screen and (min-width: 62.50em) {
+  body {
+    color: var(--font-color-desktop);
+    background-color: var(--color-body-desktop);
+  }
+}
+
