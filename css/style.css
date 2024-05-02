@@ -37,14 +37,16 @@ body{
   justify-content: center;
   align-items: center;
   background-color: var(--color-body-mobile);
+  height: 100vh;
+  font-family: sans-serif;
 }
 
 body{
-  font-size: 16em;
+  font-size: 8em;
   color: var(--font-color-mobile);
 }
 
-@media screen and (min-width: 37.5em) {
+@media only screen and (min-width: 37.5em) {
   body {
     color: var(--font-color-ipad);
     background-color: var(--color-body-ipad);
@@ -52,10 +54,14 @@ body{
 }
 
 
-@media screen and (min-width: 62.50em) {
+@media only screen and (min-width: 62.50em) {
   body {
     color: var(--font-color-desktop);
     background-color: var(--color-body-desktop);
   }
+}
+
+h1{
+  font-size: 14vw;
 }
 
